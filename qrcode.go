@@ -9,7 +9,8 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-	"wechat/model"
+
+	"github.com/freebsdly/wechat/model"
 )
 
 // 创建新的二维码请求数据
