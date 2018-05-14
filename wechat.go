@@ -6,16 +6,20 @@ import (
 
 // 定义wechat的api地址
 const (
-	WeChatBaseAPIUrl   = "https://api.weixin.qq.com/cgi-bin"
-	WeChatTokenAPIUrl  = "https://api.weixin.qq.com/cgi-bin/token"
-	WeChatQRcodeAPIUrl = "https://api.weixin.qq.com/cgi-bin/qrcode"
-	WeChatUserAPIUrl   = "https://api.weixin.qq.com/cgi-bin/user"
+	WeChatBaseAPIUrl     = "https://api.weixin.qq.com/cgi-bin"
+	WeChatTokenAPIUrl    = "https://api.weixin.qq.com/cgi-bin/token"
+	WeChatQRcodeAPIUrl   = "https://api.weixin.qq.com/cgi-bin/qrcode"
+	WeChatUserAPIUrl     = "https://api.weixin.qq.com/cgi-bin/user"
+	WeChatMenuAPIUrl     = "https://api.weixin.qq.com/cgi-bin/menu"
+	WeChatTemplateAPIUrl = "https://api.weixin.qq.com/cgi-bin/message/template"
 )
 
 var (
 	WeChatQRcodeCreateAPIUrl  = fmt.Sprintf("%s/create", WeChatQRcodeAPIUrl)
 	WeChatUserInfoAPIUrl      = fmt.Sprintf("%s/info", WeChatUserAPIUrl)
-	WechatUserInfoBatchAPIUrl = fmt.Sprintf("%s/batchget", WeChatUserInfoAPIUrl)
+	WeChatUserInfoBatchAPIUrl = fmt.Sprintf("%s/batchget", WeChatUserInfoAPIUrl)
+	WeChatMenuCreateAPIUrl    = fmt.Sprintf("%s/create", WeChatMenuAPIUrl)
+	WeChatTemplateSendAPIUrl  = fmt.Sprintf("%s/send", WeChatTemplateAPIUrl)
 )
 
 // 定义语言
@@ -60,4 +64,6 @@ const (
 const (
 	EventScanType     = "SCAN"
 	EventLocationType = "LOCATION"
+	EventClickType    = "CLICK"
+	EventViewType     = "VIEW"
 )

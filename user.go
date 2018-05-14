@@ -72,7 +72,7 @@ func GetUserInformation(token string, data *model.UserInfoRequestData) (userinfo
 
 // 批量获取用户基本信息
 func BatchGetUserInformation(token string, data *model.BatchUserInfoRequestData) (userlist *model.UserInformationList, err error) {
-	reqline, err := url.Parse(WechatUserInfoBatchAPIUrl)
+	reqline, err := url.Parse(WeChatUserInfoBatchAPIUrl)
 	if err != nil {
 		return
 	}
