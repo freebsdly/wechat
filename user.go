@@ -9,7 +9,8 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-	"wechat/model"
+
+	"github.com/freebsdly/wechat/model"
 )
 
 // 获取订阅用户基本信息

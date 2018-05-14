@@ -5,8 +5,10 @@ import (
 	"encoding/xml"
 	"fmt"
 	"strings"
-	"wechat/model"
-	"wechat/util"
+
+	"github.com/freebsdly/wechat/util"
+
+	"github.com/freebsdly/wechat/model"
 )
 
 // 解密密文消息

@@ -8,7 +8,8 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-	"wechat/model"
+
+	"github.com/freebsdly/wechat/model"
 )
 
 // 获取access_token

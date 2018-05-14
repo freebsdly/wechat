@@ -9,7 +9,8 @@ import (
 	"net/http"
 	"net/url"
 	"strings"
-	"wechat/model"
+
+	"github.com/freebsdly/wechat/model"
 )
 
 // 创建自定义菜单
